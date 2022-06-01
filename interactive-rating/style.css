@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+body{
+    background-color: black;
+    position: relative;
+}
+
+main{
+    max-width: 100%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 12%, 8%);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 8em;
+    border-radius: 2em;
+    padding: 2em;
+    max-height: auto;
+}
+@media(max-width: 1440px){
+    main{
+        max-width: 100%;
+        width: 30%;
+        height: 100%;
+    }
+    #rating{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+
+#main_content{
+    max-width: 100%;
+    width: 100%;
+}
+.main_content_sections{
+    position: relative;
+    padding-right: .1em;
+}
+.image{
+    background: hsl(213, 19%, 18%);
+    width: 35px;
+    height: 35px;
+    padding: .45em;
+    border-radius: 50%;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+img{
+    max-width: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+p, h4{
+    padding-top: .7em;
+    line-height: 20pt;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(216, 12%, 54%);
+}
+h4{
+    padding-right: .7em;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#rating{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5em;
+    width: 100%;
+
+}
+.rating{
+    background-color: hsl(213, 19%, 18%);
+    padding: 1em;
+    height: 38px;
+    width: 38px;
+    padding: .8em;
+    margin-right: .8em;
+    margin-bottom: 1.5em;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.rating:hover{
+    transition: 0.35s;
+    background-color: rgb(255, 81, 0);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: url('./fonts/Poppins/Poppins-Black.ttf');
+}
+button{
+    margin-right: .9em;
+    padding: .6em;
+    width: 95%;
+    max-width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(255, 81, 0);
+    color: #fff;
+    font-weight: bold;
+    font-size: .9rem;
+    transition: 0.3s;
+}
+button:hover{
+    cursor: pointer;
+    background: #fff;
+    color: rgb(255, 81, 0);
+    transition: 0.35s;
+}
+
+.active{
+    color: #fff;
+    background-color: rgb(0, 255, 128);
+    transition: 0.35s;
+}
+
+@media (max-width: 375px) {
+    main{
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(216, 12%, 8%);
+        width: 85%;
+        margin: auto;
+        margin-top: 40%;
+        border-radius: 12px;
+        padding: .8em;
+    }
+    p{
+        font-family: "Overpass";
+        font-size: .9rem;
+        letter-spacing: 2px;
+    }
+    #rating{
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 100%;
+    }
+    button:hover{
+        cursor: pointer;
+        background: #fff;
+        color: rgb(255, 81, 0);
+        transition: 0.35s;
+    }
+    .rating:hover{
+        transition: 0.35s;
+        background-color: rgb(255, 81, 0);
+        cursor: pointer;
+        font-weight: bold;
+        font-family: url('./fonts/Poppins/Poppins-Black.ttf');
+    }
+}

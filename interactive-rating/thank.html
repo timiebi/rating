@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thank_page</title>
+    <!-- font-link -->
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass"/>
+    <!-- css link -->
+    <link rel="stylesheet" href="./thank.css"/>
+</head>
+<body>
+
+    <!-- main start -->
+    <main>
+
+            <!-- thank you section -->
+            <div class="thank_you">
+                <img src="./images/illustration-thank-you.svg" alt="thank you image" class="img">
+                <div id="number_of_selection">
+                    <h4 class="input_header"><span> you selected <number></number> out of 5</span></h4>
+                </div>
+                <div class="appreciation_text">
+                    <h3 class="thank_you_header">Thank you!</h3>
+                    <p class="appreciation_paragraph">
+                        We appreciate you taking time to give a rating.
+                        if you ever need need more support, don't hesitate to get in touch.
+                    </p>
+                </div>
+            </div> 
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+<script>
+    const pool = window.location.search;
+    const [_, value] = pool.split('=');
+//   const value =  pool[pool.length-1];
+    // console.log({ value });
+    // console.log(pool)
+    const number = document.querySelector('number');
+    number.append(value)
+</script>

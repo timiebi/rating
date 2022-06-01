@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass" , sans-serif;
+}
+body{
+  background: black;
+    /* width: 1440px; */
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 30%;
+    /* height: 320px; */
+    background: hsl(216, 12%, 8%);
+    border-radius: 1em;
+    margin-top: 10em;
+    padding: 3em;
+}
+img{
+    max-width: 100%;
+}
+#number_of_selection{
+    text-align: center;
+    margin-top: 2em;
+    font-size: .8rem;
+    background: hsl(213, 19%, 18%);
+    max-width: 100%;
+    border-radius: 2em;
+    padding: .5em;
+    width: 65%;
+}
+.thank_you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.appreciation_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 1.5em;
+}
+.appreciation_paragraph{
+    font-size: .8rem;
+    max-width: 100%;
+    margin-top: .78em;
+    color:  hsl(213, 19%, 18%);
+    font-weight: 400;
+}
+.thank_you_header{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+span{
+    color: rgb(252, 124, 39);
+}
+@media (max-width: 375px) {
+    main{
+        margin: 0 auto;
+        width: 85%;
+        margin-top: 5em;
+    }
+    #number_of_selection{
+        width: 100%;
+        padding: .5em;
+        font-size: .8rem
+    }
+    .thank_you_header{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .appreciation_paragraph{
+        font-size: .8rem;
+        width: 100%;
+        padding: .1em;
+    }
+}
